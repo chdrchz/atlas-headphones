@@ -1,0 +1,116 @@
+/* ============================ */
+/*       DESKTOP STYLING        */
+/* ============================ */
+
+/* VARIABLES */
+
+:root {
+    /* COLORS */
+    --color-white: #FFFFFF;
+    --color-accent: #FF6565;
+    --color-black: #071629;
+
+    /* FONTS */
+    --main-font: 'Source Sans Pro', sans-serif;
+
+    /* HEADINGS */
+
+    /* H1 */
+    --weight-h1: 700;
+    --font-size-h1: 2rem;
+
+    /* H2 */
+    --weight-h2: 400;
+    --font-size-h2: 1.5rem;
+
+    /* H3 */
+    --weight-h3: 400;
+    --font-size-h3: 1.125rem;
+
+    /* H4 */
+    --weight-h4-thin: 400;
+    --weight-h4: 700;
+    --font-size-h4: 1rem;
+
+    /* H5 */
+    --weight-h5: 400;
+    --font-size-h5: 2.875rem;
+
+    /* SIZING */
+    --max-width: 1000px;
+    --padding: 2rem;
+}
+
+/* ============================ */
+/*        BASIC STYLING         */
+/* ============================ */
+
+.main-content {
+    max-width: --max-width;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    padding: 0;
+    margin: 0;
+}
+
+/* LIST STYLING */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* BUTTON STYLING */
+button {
+    background-color: var(--color-accent);
+}
+
+input[type="button"] {
+    background-color: var(--color-accent);
+}
+
+/* FONT WEIGHT + SIZE STYLING */
+h1 {
+    font-weight: var(--weight-h1);
+    font-size: var(--font-size-h1);
+    margin: 0;
+}
+
+h2 {
+    font-weight: var(--weight-h2);
+    font-size: var(--font-size-h2);
+    margin: 0;
+}
+
+h3 {
+    font-weight: var(--weight-h3);
+    font-size: var(--font-size-h3);
+    margin: 0;
+}
+
+h4 {
+    font-weight: var(--weight-h4); /* this also has a thinner variant */
+    font-size: var(--font-size-h4);
+    margin: 0;
+}
+
+h5 {
+    font-weight: var(--weight-h5);
+    font-size: var(--font-size-h5);
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* ============================ */
+/*         MAIN STYLING         */
+/* ============================ */
+
+
+
