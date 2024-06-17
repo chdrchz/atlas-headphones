@@ -12,6 +12,12 @@
 
     /* FONTS */
     --main-font: 'Source Sans Pro', sans-serif;
+    @font-face {
+        font-family: 'holberton_school-icon';
+        src: url('fonts/holberton_school-icon.woff') format('woff');
+    }
+
+    --line-height: 26px;
 
     /* HEADINGS */
 
@@ -38,7 +44,11 @@
 
     /* SIZING */
     --max-width: 1000px;
-    --padding: 2rem;
+    --padding-2rem: 2rem;
+    --padding-4rem: 4rem;
+    --padding-6rem: 6rem;
+    --height-section: 650px;
+    --width-paragraph: 39.23rem;
 }
 
 /* ============================ */
@@ -49,9 +59,17 @@
     max-width: --max-width;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: var(--main-font);
     padding: 0;
     margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* LIST STYLING */
@@ -66,7 +84,23 @@ li {
 
 /* BUTTON STYLING */
 button {
+    width: 10.125rem;
+    height: 2.75rem;
     background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* GLYPH STYLING */
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    color: var(--color-accent);
+    font-size: 80px;
 }
 
 input[type="button"] {
@@ -113,4 +147,182 @@ p {
 /* ============================ */
 
 
+/* BACGROUND IMG STYLING */
+.wrapper {
+    height: 800px;
+    background-image: url(/images/headphones_hero_1.jpg);
+    background-size: cover;
+}
 
+/* HEADER STYLING */
+header {
+    width: 71%;
+    margin: 0 auto;
+    padding: var(--padding-2rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+li {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+/* HERO STYLING */
+.hero {
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 18rem;
+    gap: 10px;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p {
+    width: var(--width-paragraph);
+    text-align: center;
+    line-height: var(--line-height);
+    font-weight: 400;
+}
+
+.hero, .hero-paragraph, h1, h4 {
+    color: var(--color-white);
+}
+
+/* ABOUT + RESULTS STYLING */
+.about, .results {
+    height: var(--height-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-4rem);
+}
+
+.text-content {
+    width: var(--width-paragraph);
+}
+
+.text-content h1, h2, h3, h5, p {
+    text-align: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text-content p {
+    line-height: var(--line-height);
+}
+
+.glyph-content, .polygon-content {
+    width: var(--max-width);
+    height: 193px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* about */
+.about h1, .about-paragraph {
+    color: var(--color-black);
+}
+
+.block  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.block p {
+    width: 207px;
+    color: var(--color-black);
+    font-size: 0.875rem;
+    line-height: var(--line-height);
+}
+
+.block h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+}
+
+/* results */
+.results {
+    height: var(--height-section);
+    background-image: url(/images/headphones_hero_2.jpg);
+    background-size: cover;
+}
+
+.results h1, h5, p {
+    color: var(--color-white);
+}
+
+.block-2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.block-2 img {
+    display: block;
+    width: 190px;
+    height: 190px;
+}
+
+.block-2 p {
+    width:L 100%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.block-2 h5 {
+    font-weight: 700;
+}
+
+.text-overlay {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+    align-items: center;
+}
