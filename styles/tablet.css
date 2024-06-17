@@ -167,6 +167,7 @@ p {
     height: 800px;
     background-image: url(/images/headphones_hero_1.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 /* HEADER STYLING */
@@ -215,6 +216,9 @@ ul li:active {
     justify-content: space-around;
     align-items: center;
     padding-top: 18rem;
+    padding-bottom: var(--padding-2rem);
+    padding-left: var(--padding-2rem);
+    padding-right: var(--padding-2rem);
     gap: 10px;
 }
 
@@ -226,7 +230,6 @@ ul li:active {
 }
 
 .hero p {
-    width: var(--width-paragraph);
     text-align: center;
     line-height: var(--line-height);
     font-weight: 400;
@@ -234,6 +237,7 @@ ul li:active {
 
 .hero, .hero-paragraph, h1, h4 {
     color: var(--color-white);
+    text-align: center;
 }
 
 /* ABOUT + RESULTS STYLING */
@@ -244,10 +248,6 @@ ul li:active {
     justify-content: flex-start;
     align-items: center;
     padding: var(--padding-4rem);
-}
-
-.text-content {
-    width: var(--width-paragraph);
 }
 
 .text-content h1, h2, h3, h5, p {
