@@ -94,6 +94,24 @@ button {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
+input[type="button"] {
+    width: 10.125rem;
+    height: 2.75rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+input[type="button"]:hover {
+    opacity: 0.9;
+}
+
 /* GLYPH STYLING */
 .holberton_school-icon-ic_sound,
 .holberton_school-icon-ic_video,
@@ -101,10 +119,6 @@ button {
 .holberton_school-icon-ic_hearing {
     color: var(--color-accent);
     font-size: 80px;
-}
-
-input[type="button"] {
-    background-color: var(--color-accent);
 }
 
 /* FONT WEIGHT + SIZE STYLING */
@@ -172,10 +186,11 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 ul {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     gap: 3rem;
 }
@@ -183,6 +198,11 @@ ul {
 li {
     font-size: 0.75rem;
     font-weight: 700;
+    color: var(--color-white);
+}
+
+/* I cant figure out the hover */
+ul li:active {
     color: var(--color-white);
 }
 
@@ -292,7 +312,6 @@ li {
 }
 
 .block-2 {
-    width: 100%;
     height: 100%;
     text-align: center;
     position: relative;
@@ -305,7 +324,7 @@ li {
 }
 
 .block-2 p {
-    width:L 100%;
+    width: 100%;
     font-size: 14px;
     text-align: justify;
 }
@@ -322,7 +341,83 @@ li {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-75%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     align-items: center;
+}
+
+/* FORM STYLING */
+.form {
+    width: 100%;
+    height: var(--height-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.form h1 {
+    color: var(--color-black);
+}
+
+.form-content {
+    width: 335px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+
+/* FOOTER STYLING */
+footer {
+    height: 249px;
+    width: 100%;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer img {
+    height: 32px;
+}
+
+footer p {
+    color: var(--color-white);
+    opacity: 35%;
+    padding-bottom: var(--padding-2rem);
+}
+
+.footer-content {
+    height: auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
