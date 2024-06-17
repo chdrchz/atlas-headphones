@@ -48,6 +48,7 @@
     --padding-4rem: 4rem;
     --padding-6rem: 6rem;
     --height-section: 650px;
+    --height-section-large: 876px;
     --width-paragraph: 39.23rem;
 }
 
@@ -341,7 +342,7 @@ ul li:active {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -50%);
     text-align: center;
     align-items: center;
 }

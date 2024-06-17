@@ -47,8 +47,9 @@
     --padding-2rem: 2rem;
     --padding-4rem: 4rem;
     --padding-6rem: 6rem;
-    --height-section: 650px;
-    --width-paragraph: 39.23rem;
+    --height-section: 876px;
+    --height-section-small: 650px;
+    --width-paragraph: 29.5rem;
 }
 
 /* ============================ */
@@ -240,7 +241,7 @@ ul li:active {
     height: var(--height-section);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: var(--padding-4rem);
 }
@@ -254,6 +255,7 @@ ul li:active {
 }
 
 .text-content {
+    padding-top: var(--padding-2rem);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -264,11 +266,13 @@ ul li:active {
 }
 
 .glyph-content, .polygon-content {
-    width: var(--max-width);
+    width: var(--width-paragraph);
     height: 193px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding-top: var(--padding-6rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 96px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -278,8 +282,8 @@ ul li:active {
 }
 
 .block  {
-    width: 100%;
-    height: 100%;
+    width: 207px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,9 +343,9 @@ ul li:active {
     flex-direction: column;
     gap: 25px;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -60%);
     text-align: center;
     align-items: center;
 }
@@ -349,7 +353,7 @@ ul li:active {
 /* FORM STYLING */
 .form {
     width: 100%;
-    height: var(--height-section);
+    height: var(--height-section-small);
     display: flex;
     flex-direction: column;
     justify-content: center;
