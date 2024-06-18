@@ -186,25 +186,18 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
-    z-index: 2;
-}
-
-ul {
-    display: flex;
     flex-direction: row;
-    gap: 3rem;
+    justify-content: center;
+    gap: 25px;
 }
 
-li {
-    font-size: 0.75rem;
-    font-weight: 700;
+a {
+    text-decoration: none;
     color: var(--color-white);
 }
 
-/* I cant figure out the hover */
-ul li:active {
-    color: var(--color-white);
+a:hover {
+    color: #FF6565;
 }
 
 /* HERO STYLING */
