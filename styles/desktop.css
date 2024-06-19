@@ -83,6 +83,12 @@ li {
     list-style: none;
 }
 
+/* ham styling */
+.ham-menu {
+    display: none;
+}
+
+
 /* BUTTON STYLING */
 button {
     width: 10.125rem;
