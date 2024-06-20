@@ -210,7 +210,6 @@ p {
 /* BACGROUND IMG STYLING */
 .wrapper {
     height: 900px;
-    background-image: url(/static/images/headphones_hero_1.jpg);
     background-size: cover;
     background-position: center;
 }
