@@ -14,7 +14,7 @@
     --main-font: 'Source Sans Pro', sans-serif;
     @font-face {
         font-family: 'holberton_school-icon';
-        src: url('static/fonts/holberton_school-icon.woff') format('woff');
+        src: url('/static/fonts/holberton_school-icon.woff') format('woff');
     }
 
     --line-height: 26px;
@@ -210,7 +210,7 @@ p {
 /* BACGROUND IMG STYLING */
 .wrapper {
     height: 900px;
-    background-image: url(static/images/headphones_hero_1.jpg);
+    background-image: url(/static/images/headphones_hero_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -341,7 +341,7 @@ nav {
 
 /* results */
 .results {
-    background-image: url(static/images/headphones_hero_2.jpg);
+    background-image: url(/static/images/headphones_hero_2.jpg);
     background-size: cover;
     z-index: -3;
 }
