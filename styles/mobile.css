@@ -129,7 +129,7 @@ input[type="button"]:hover {
     display: inline-block;
     top: calc(var(--header-height) / 2);
     left: 25px;
-    transform: translateY(-115%);
+    transform: translateY(-110%);
 }
 
 .holberton_school-icon-menu {
@@ -165,7 +165,6 @@ input[type="button"]:hover {
 .dropdown a:hover {
     color: var(--color-accent);
 }
-
 
 
 /* FONT WEIGHT + SIZE STYLING */
