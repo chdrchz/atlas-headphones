@@ -14,7 +14,7 @@
     --main-font: 'Source Sans Pro', sans-serif;
     @font-face {
         font-family: 'holberton_school-icon';
-        src: url('fonts/holberton_school-icon.woff') format('woff');
+        src: url('static/fonts/holberton_school-icon.woff') format('woff');
     }
 
     --line-height: 26px;
