@@ -210,7 +210,7 @@ p {
 /* BACGROUND IMG STYLING */
 .wrapper {
     height: 900px;
-    background-image: url(/images/headphones_hero_1.jpg);
+    background-image: url(static/images/headphones_hero_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -341,7 +341,7 @@ nav {
 
 /* results */
 .results {
-    background-image: url(/images/headphones_hero_2.jpg);
+    background-image: url(static/images/headphones_hero_2.jpg);
     background-size: cover;
     z-index: -3;
 }

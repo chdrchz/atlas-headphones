@@ -165,7 +165,7 @@ p {
 /* BACGROUND IMG STYLING */
 .wrapper {
     height: 800px;
-    background-image: url(/images/headphones_hero_1.jpg);
+    background-image: url(static/images/headphones_hero_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -308,7 +308,7 @@ a:hover {
 /* results */
 .results {
     height: var(--height-section);
-    background-image: url(/images/headphones_hero_2.jpg);
+    background-image: url(static/images/headphones_hero_2.jpg);
     background-size: cover;
 }
 
