@@ -11,4 +11,3 @@
 ''' git clone https://github.com/chdrchz/atlas-headphones '''
 
 <p>Then, use any ide with a live server extension to view the webpage!</p>
-<p>Alternatively, go to github pages: https://chdrchz.github.io/atlas-headphones/</p>
